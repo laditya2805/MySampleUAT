@@ -28,6 +28,9 @@ jobs:
     steps:
       - name: Checkout Repo2
         uses: actions/checkout@v4
+        with:
+          repository: laditya2805/MySampleUAT
+          ref: main
 
       - name: List files
         run: ls -R .
