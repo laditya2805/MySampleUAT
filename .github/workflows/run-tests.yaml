@@ -1,0 +1,20 @@
+name: Run Automation Tests
+
+on:
+  workflow_call:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print starting test
+        run: echo "Automation tests running from Repo2!"
+
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Run dummy test
+        run: |
+          echo "Running dummy test..."
+          sleep 2
+          echo "Test completed!"
