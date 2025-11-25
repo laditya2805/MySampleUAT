@@ -2,6 +2,7 @@ name: Run Automation Tests
 
 on:
   workflow_call:
+  push:
 
 permissions:
   contents: read
